@@ -347,20 +347,36 @@
           spreadsheet. Get answers.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
-        ${[
-        ['🧹','Automated Data Cleaning','Removes duplicates, fills blanks, standardizes dates, and trims whitespace
-        automatically.'],
-        ['🤖','Gemini AI Insights','5 precise, actionable business insights generated from your condensed data
-        metadata.'],
-        ['📈','Market Predictor','Profit simulator sliders, monthly trend charts, pivot analysis, and anomaly
-        detection.'],
-        ['📄','PDF & Excel Export','Download executive summary PDFs and enhanced Excel dashboards with audit logs.'],
-        ].map(([icon,title,desc])=>`
         <div class="card" style="padding:24px">
-          <div style="font-size:28px;margin-bottom:14px">${icon}</div>
-          <div style="font-weight:800;font-size:15px;margin-bottom:8px;color:var(--text)">${title}</div>
-          <div style="font-size:13px;color:var(--text3);line-height:1.6">${desc}</div>
-        </div>`).join('')}
+          <div style="font-size:28px;margin-bottom:14px">🧹</div>
+          <div style="font-weight:800;font-size:15px;margin-bottom:8px;color:var(--text)">Automated Data Cleaning</div>
+          <div style="font-size:13px;color:var(--text3);line-height:1.6">Removes duplicates, fills blanks, standardizes dates, and trims whitespace automatically.</div>
+        </div>
+        <div class="card" style="padding:24px">
+          <div style="font-size:28px;margin-bottom:14px">🗂️</div>
+          <div style="font-weight:800;font-size:15px;margin-bottom:8px;color:var(--text)">Smart Data Organization</div>
+          <div style="font-size:13px;color:var(--text3);line-height:1.6">Auto-detects column types, groups related fields, and structures raw spreadsheets into clean, query-ready tables.</div>
+        </div>
+        <div class="card" style="padding:24px">
+          <div style="font-size:28px;margin-bottom:14px">🤖</div>
+          <div style="font-weight:800;font-size:15px;margin-bottom:8px;color:var(--text)">Gemini AI Insights</div>
+          <div style="font-size:13px;color:var(--text3);line-height:1.6">5 precise, actionable business insights generated from your condensed data metadata.</div>
+        </div>
+        <div class="card" style="padding:24px">
+          <div style="font-size:28px;margin-bottom:14px">📈</div>
+          <div style="font-weight:800;font-size:15px;margin-bottom:8px;color:var(--text)">Market Predictor</div>
+          <div style="font-size:13px;color:var(--text3);line-height:1.6">Profit simulator sliders, monthly trend charts, and pivot analysis to forecast outcomes.</div>
+        </div>
+        <div class="card" style="padding:24px">
+          <div style="font-size:28px;margin-bottom:14px">🚨</div>
+          <div style="font-weight:800;font-size:15px;margin-bottom:8px;color:var(--text)">Anomaly Detection</div>
+          <div style="font-size:13px;color:var(--text3);line-height:1.6">Scans every dataset for outliers — unusual spikes, drops, or values that break the normal pattern — and flags them so issues like fraud, errors, or supply problems don't slip by unnoticed.</div>
+        </div>
+        <div class="card" style="padding:24px">
+          <div style="font-size:28px;margin-bottom:14px">📄</div>
+          <div style="font-weight:800;font-size:15px;margin-bottom:8px;color:var(--text)">PDF & Excel Export</div>
+          <div style="font-size:13px;color:var(--text3);line-height:1.6">Download executive summary PDFs and enhanced Excel dashboards with audit logs.</div>
+        </div>
       </div>
     </div>
 
